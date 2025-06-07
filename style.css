@@ -1,0 +1,43 @@
+*{
+    top:0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    background-color: bisque;
+    text-align: center;
+    border-bottom: solid 2px black;
+    padding: 20px;
+}
+
+.container{
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    width: 800px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.container>div:nth-child(-n+5){
+    background-color:beige;
+}
+
+.container>div:nth-child(1){
+    grid-column: span 3;
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
+    height: 30px;
+    background-color: bisque;
+    text-align: center;
+    border-top: solid 2px black;
+    padding: 10px;
+}
