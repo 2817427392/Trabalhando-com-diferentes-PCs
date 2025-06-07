@@ -16,20 +16,13 @@ header{
 
 .container{
     text-align: center;
-    margin: 10px auto;
+    margin: 50px auto;
     padding: 10px;
     width: 800px;
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
-
-.container>div:nth-child(-n+5){
-    background-color:beige;
-}
-
-.container>div:nth-child(1){
-    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 footer{
